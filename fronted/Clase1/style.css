@@ -1,0 +1,152 @@
+
+:root {
+
+    --color-fondo: rgb(71, 106, 222);
+    --color-ingreso:rgba(255, 255, 255, 0.954);
+    --color-gasto: rgb(4, 58, 254);
+
+     --bg-tarjeta: #5f6b0e;
+    --bg-registro: #307712;
+    --verde-exito: rgb(29, 153, 50);
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background: linear-gradient(180deg, rgba(3, 176, 245, 0.744), rgb(56, 167, 232), rgba(48, 255, 234, 0.731));
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    color: white;
+}
+
+
+
+
+.Padre {
+    background-color: var(--bg-tarjeta);
+    width: 390px;          
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+ h2{
+     text-align: center;
+     font-size: 22px;
+     margin-bottom: 20px;
+}
+
+.hijo{
+display: flex;
+flex-direction: column;
+gap: 12px;
+margin-bottom: 20px;
+
+}
+
+.hijo label{
+
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--color-ingreso);
+    margin-top: 5px;
+}
+
+.hijo input, .hijo select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+    background-color: white;
+    color: #333;
+    height: 45px;
+}
+
+.hijo h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.registro{
+    background-color: var(--bg-registro);
+    border-left: 4px solid var(--verde-exito);
+    border-radius: 12px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.registro.ingreso {
+    border-left: 4px solid rgb(16, 229, 16); 
+}
+.registro.ingreso .monto {
+    color: rgb(16, 229, 16); 
+}
+
+
+.registro.gasto {
+    border-left: 4px solid #ff7a00; 
+}
+
+.registro.gasto .monto {
+    color: #ff7a00;
+}
+
+.info-gasto {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+
+.info-gasto .monto {
+    color: rgb(16, 229, 16);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.info-gasto .categoria-texto {
+    color: #a0aec0;
+    font-size: 13px;
+}
+
+.acciones button {
+    background-color: rgb(2, 98, 111); 
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 12px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+#elBoton { 
+    background-color: var(--verde-exito); 
+    color: white; 
+    border: none; 
+    padding: 14px; 
+    font-size: 16px; 
+    font-weight: bold; 
+    border-radius: 10px;
+    cursor: pointer; 
+    margin-top: 15px; 
+} 
+
