@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administracion de Finanzas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="Padre"> 
+
+<div class="hijo">
+    <h2>Administracion De Gastos</h2>
+    <P class="subtitulo">Registra tus ingresos y gastos con claridad y estilo</P>
+    
+    <label for="">Ingresa un monto</label>
+    <input type="number" name="id" placeholder="Monto $">
+
+    <label for="">Fecha</label>
+    <input type="date" id="Fecha"  name="Fecha">
+     
+
+    <label for="Categoria">Categoria</label>
+    <select name="Categoria" id="Categoria">
+        <option value="" disabled selected></option>
+
+
+<option value="comida">Comida</option>
+  <option value="transporte">Transporte</option>
+  <option value="servicio">Servicio</option>
+  <option value="salario">Salario</option>
+</select>
+
+
+<button id="elBoton">GUARDAR</button>
+</div>
+<hr>
+
+<div class="hijo">
+
+ <h3>Movimientos registrados</h3>
+            
+            
+<div class="registro ingreso">
+<div class="info-gasto">
+ <span class="monto">$250.000</span>
+ <span class="categoria-texto">Salario</span>
+</div>
+
+
+<div class="acciones">
+<button class="btn-editar">✏️</button>
+<button class="btn-eliminar">🗑️</button>
+ </div>
+
+</div>
+
+    
+<div class="registro gasto">
+<div class="info-gasto">
+<span class="monto">$60000</span>
+<span class="categoria-texto">Comida</span>
+</div>
+
+
+<div class="acciones">
+<button class="btn-editar">✏️</button>
+<button class="btn-eliminar">🗑️</button>
+</div>
+
+
+
+
+
+</div>
+</div>
+</div>
+
+    <script src="java.js"></script>
+</body>
+</html>
