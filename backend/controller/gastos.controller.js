@@ -1,14 +1,15 @@
 const modelo = require("../models/gastos.model")
 
-class GastosController{
+class GastosController {
 
-    static async ObtenerGastos(req,res){
+    static async ObtenerGastos(req, res) {
+        const gastos = await modelo.ObtenerGastos()
+        return res.json(gastos)
+    }
 
-const datos = await modelo.ObtenerGastos()
-return res.json(
-    datos
-)
-
+    static async obtenerRegistros(req, res) {
+        const registros = await modelo.ObtenerRegistros() 
+        return res.json(registros)
     }
 }
 
